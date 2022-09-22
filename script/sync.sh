@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 set -exv
-git config --global user.name $CIRRUS_REPO_OWNER
-git config --global user.email $EMAIL
 name_rom=$(grep init $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d / -f 4)
 mkdir -p $WORKDIR/rom/$name_rom
 cd $WORKDIR/rom/$name_rom
