@@ -11,8 +11,6 @@ export KBUILD_BUILD_USER=rosy
 export KBUILD_BUILD_HOST=nfsproject
 export BUILD_USERNAME=rosy
 export BUILD_HOSTNAME=nfsproject
-export use_GrapheneCamera=true
-export USE_NFSparts=true
 mka evolution -j8
 # end
 
