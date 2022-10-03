@@ -4,7 +4,7 @@ git clone https://github.com/NFS-project/local_manifest --depth 1 -b rosy-derp-1
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
-export TARGET_BUILD_ROM=DerpFest
+export NFS_TARGET_BUILD_ROM=DerpFest
 source build/envsetup.sh
 lunch derp_rosy-userdebug
 export TZ=Asia/Jakarta
