@@ -8,7 +8,7 @@ env:
 
 task:
   name: "Setting Up, Syncing, Building and Uploading"
-  only_if: $CIRRUS_REPO_OWNER == 'NFS-Project'
+  only_if: $CIRRUS_REPO_OWNER == 'c3eru'
   timeout_in: 120m
   container:
     image: anggit86/ubuntu:22.04
