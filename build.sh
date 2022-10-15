@@ -12,5 +12,5 @@ export KBUILD_BUILD_USER=zacky
 export KBUILD_BUILD_HOST=nfsproject
 export BUILD_USERNAME=zacky
 export BUILD_HOSTNAME=nfsproject
-m banana
+mka banana -j8
 # end
