@@ -4,7 +4,8 @@ git clone https://github.com/MOBX-PROJECTS/local_manifest --depth 1 -b main .rep
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 
-rm -rf hardware/google/pixel/kernel_headers
+rm -rf hardware/google/pixel/kernel_headers/Android.bp
+
 # build rom
 source build/envsetup.sh
 lunch banana_spes-user
