@@ -11,6 +11,7 @@ export KBUILD_BUILD_USER=mobx
 export KBUILD_BUILD_HOST=nfsproject
 export BUILD_USERNAME=mobx
 export BUILD_HOSTNAME=nfsproject
+export WITH_GAPPS=true
 mka nad -j8
 # end 
 
