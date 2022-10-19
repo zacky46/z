@@ -11,7 +11,7 @@ export KBUILD_BUILD_USER=mobx
 export KBUILD_BUILD_HOST=builder-ci-task-kang-moment
 export BUILD_USERNAME=mobx
 export BUILD_HOSTNAME=builder-ci-task-kang-moment
-export USE_MICROG=true
+# export USE_MICROG=true
 export USE_GAPPS=true
 mka nad -j8
 # end 
