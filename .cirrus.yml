@@ -5,11 +5,11 @@ env:
   WORKDIR: "/tmp"
   EMAIL: "ENCRYPTED[2d6794887d9eec1bffaee35efb504f16062d41fc7e7bb88202190b803d038d3cb6a873692811320b19fcacc7adf22b56]"
   CIRRUS_CLONE_DEPTH: "1"
-  credentials: "ENCRYPTED[fbe5d7b039289f51be4c28095130722f48d5249d0feed71085e9b131f4c97021bc36a11da8ac3398bfecac0056ca452d]"
+  credentials: "ENCRYPTED[46b19aaeb9f8f8fd3267338b7e3334a458d8c2d77687865b7f7ac28266767809ab88d241c2499eda7b2f967d700b7976]"
 
 task:
   name: "Setting Up, Syncing, Building and Uploading"
-  only_if: $CIRRUS_REPO_OWNER == 'c3eru'
+  only_if: $CIRRUS_REPO_OWNER == 'yanzszs'
   timeout_in: 120m
   container:
     image: anggit86/ubuntu:22.04
@@ -20,8 +20,8 @@ task:
      - ./script/load_ccache.sh
 
   Sync-rom_script:
-     - git config --global user.name "c3eru"
-     - git config --global user.email "yyprjkt@gmail.com"
+     - git config --global user.name "yanzszs"
+     - git config --global user.email "yanzszs46@gmail.com"
      - echo "$credentials" > ~/.git-credentials
      - git config --global credential.helper store --file=~/.git-credentials
      - ./script/sync.sh
