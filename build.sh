@@ -12,6 +12,6 @@ export KBUILD_BUILD_HOST=cirrus
 export BUILD_USERNAME=zacky
 export BUILD_HOSTNAME=cirrus
 # export USE_MICROG=true
-export USE_GAPPS=true
+export TARGET_USES_MINI_GAPPS=true
 mka evolution -j8
-# build 4
+# build 5
