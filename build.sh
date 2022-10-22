@@ -14,4 +14,4 @@ export BUILD_HOSTNAME=cirrus
 # export USE_MICROG=true
 export TARGET_USES_MINI_GAPPS=true
 mka evolution -j8
-# build 5
+# build 6
